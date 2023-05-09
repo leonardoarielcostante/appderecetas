@@ -98,17 +98,17 @@ const SideBar = () => {
             </form>
             <ul className='flex flex-col text-2xl mt-4 px-3 h-28 justify-between'>
                 <li onClick={() => setActiveNav(false)}>
-                  <Link  className='flex items-center py-2 border-[#45D1F4] border-t-2' to={"/"}>
+                  <Link  className='flex items-center py-2 border-[#45D1F4] border-t-2' to={"/appderecetas"}>
                     <MdOutlineFoodBank className='mr-2' />Home
                   </Link>
                 </li>
                 <li onClick={() => setActiveNav(false)}>
-                  <Link  className='flex items-center py-2 border-[#45D1F4] border-t-2' to={"/Categories"}>
+                  <Link  className='flex items-center py-2 border-[#45D1F4] border-t-2' to={"/appderecetas/Categories"}>
                     <GiChickenOven className='mr-2' />Categories
                   </Link>
                 </li>
                 <li onClick={() => setActiveNav(false)}>
-                  <Link onClick={randomMeal} className='flex items-center py-2 border-[#45D1F4] border-t-2 border-b-2' to={`/${randomMeal.strMeal}`}>
+                  <Link onClick={randomMeal} className='flex items-center py-2 border-[#45D1F4] border-t-2 border-b-2' to={`/appderecetas/${randomMeal.strMeal}`}>
                     <FaRandom className='mr-2'/>Random meal
                   </Link>
                 </li>
