@@ -21,17 +21,17 @@ export default function PopularIngredients(){
         <h2 className='text-2xl lg:text-3xl'>Popular ingredients</h2>
         <ul className='grid grid-cols-3 w-full gap-5 items-center pt-6 px-4 lg:text-3xl'>
           <li className='h-full'>
-            <Link className='flex flex-col items-center h-full' to={`/Ingredients/${salmon[0].strIngredient}`}>
+            <Link className='flex flex-col items-center h-full' to={`/appderecetas/Ingredients/${salmon[0].strIngredient}`}>
               <img src={salmonImg} className='rounded h-full max-h-48' alt="Salmon image" />{salmon[0].strIngredient}
             </Link>
           </li>
           <li className='h-full'>
-            <Link className='flex flex-col items-center h-full' to={`/Ingredients/${chicken[0].strIngredient}`}>
+            <Link className='flex flex-col items-center h-full' to={`/appderecetas/Ingredients/${chicken[0].strIngredient}`}>
               <img src={chickenImg} className='rounded h-full max-h-48' alt="Chicken image" />{chicken[0].strIngredient}
             </Link>
           </li>
           <li className='h-full'>
-            <Link className='flex flex-col items-center h-full' to={`/Ingredients/${beef[0].strIngredient}`}>
+            <Link className='flex flex-col items-center h-full' to={`/appderecetas/Ingredients/${beef[0].strIngredient}`}>
               <img src={fleshImg} className='rounded h-full max-h-48' alt="Beef image" />{beef[0].strIngredient}
             </Link>
           </li>

@@ -26,7 +26,7 @@ export default function Nav() {
     e.preventDefault();
     setActiveNav(false);
     setSearch(searchQuery.current.value);
-    navigate(`/search/${searchQuery.current.value}`);
+    navigate(`/appderecetas/search/${searchQuery.current.value}`);
   };
 
   const NavBar = () => {
@@ -43,17 +43,17 @@ export default function Nav() {
           </form>
           <ul className='flex w-full justify-evenly items-center'>
               <li>
-                <Link className='flex items-center sub px-2' to={"/"}>
+                <Link className='flex items-center sub px-2' to={"/appderecetas"}>
                   <MdOutlineFoodBank className='mr-2' />Home
                 </Link>
               </li>
               <li>
-                <Link className='flex items-center sub px-2' to={"/Categories"}>
+                <Link className='flex items-center sub px-2' to={"/appderecetas/Categories"}>
                   <GiChickenOven className='mr-2' />Categories
                 </Link>
               </li>
               <li>
-                <Link onClick={randomMeal} className='flex items-center sub px-2' to={`/${randomMeal.strMeal}`}>
+                <Link onClick={randomMeal} className='flex items-center sub px-2' to={`/appderecetas/${randomMeal.strMeal}`}>
                 <FaRandom className='mr-2'/>Random meal
                 </Link>
               </li>

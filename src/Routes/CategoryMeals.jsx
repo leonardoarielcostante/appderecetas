@@ -18,7 +18,7 @@ export default function CategoryMeals(){
           {
             meals.map(meal => (
               <li className='relative' key={meal.idMeal}>
-                <Link to={`/${meal.strMeal}`}>
+                <Link to={`/appderecetas/${meal.strMeal}`}>
                   <img className='rounded object-fill max-h-72' src={meal.strMealThumb} alt={'Imagen de' + meal.strMeal} />
                   <p className='p-1 text-sm absolute bottom-0 bg-opacity-80 bg-[#45D1F4] w-full'>
                     {meal.strMeal}

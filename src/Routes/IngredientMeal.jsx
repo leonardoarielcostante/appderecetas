@@ -20,7 +20,7 @@ export default function IngredientMeal(){
           {
           mealsIngredient.map(data => (
             <li className='relative' key={data.idMeal}>
-              <Link to={`/${data.strMeal}`}>
+              <Link to={`/appderecetas/${data.strMeal}`}>
                 <img className='rounded object-fill max-h-72 bg-white' alt={'Imagen de' + data.strMeal} src={data.strMealThumb} />
                 <p className='py-1 text absolute bottom-0 bg-opacity-80 bg-[#45D1F4] w-full rounded-b'>{data.strMeal}</p>
               </Link>

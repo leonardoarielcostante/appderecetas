@@ -21,7 +21,7 @@ export default function Ingredients() {
           {
           categories.map(category => (
             <li className='relative' key={category.idCategory}>
-              <Link to={`/Categories/${category.strCategory}`}>
+              <Link to={`/appderecetas/Categories/${category.strCategory}`}>
                 <img className='rounded object-fill bg-white max-h-72' alt={'Imagen de' + category.strCategory} src={category.strCategoryThumb} />
                 <p className='py-1 text absolute bottom-0 bg-opacity-80 bg-[#45D1F4] w-full rounded-b'>{category.strCategory}</p>
               </Link>
