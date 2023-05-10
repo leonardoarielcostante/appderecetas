@@ -18,14 +18,14 @@ function App() {
       <main>
         <article>
             <Routes>
-              <Route path="/appderecetas" element={<Principal />} />
+              <Route path="/appderecetas/" element={<Principal />} />
               <Route path="/appderecetas/search/:searchRoute" element={<SearchEngine />} />
               <Route path="/appderecetas/search/" element={<div className="flex h-screen justify-center items-center text-xl">No results found</div>} />
               <Route path="/appderecetas/Categories" element={<Categories />} />
               <Route path="/appderecetas/Categories/:categoryMeals" element={<CategoryMeals />} />
               <Route path="/appderecetas/Ingredients/:ingredient" element={<IngredientMeal />} />
-              <Route path="/appderecetas/random" element={<Random />} />
-              <Route path="/appderecetas/:meal" element={<Meal />} />
+              <Route path="/appderecetas/random/" element={<Random />} />
+              <Route path="/appderecetas/:meal/" element={<Meal />} />
             </Routes>
         </article>
       </main>
