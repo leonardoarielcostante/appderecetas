@@ -10,14 +10,11 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import useMobile from '../Hooks/useMobile';
 import useRandomMeal from '../Hooks/useRandomMeal';
 
-
 export default function Nav() {
 
   const [activeNav, setActiveNav] = useState(false);
   const [search, setSearch] = useState('');
-  const {meal} = useParams();
   const {searchRoute} = useParams();
-  const randomMeal = useRandomMeal();
   const searchQuery = useRef('');
   const navigate = useNavigate();
   const mobile = useMobile();
@@ -53,7 +50,7 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                <Link onClick={randomMeal} className='flex items-center sub px-2' to={`/appderecetas/${randomMeal.strMeal}`}>
+                <Link onClick={() => useRandomMeal()} className='flex items-center sub px-2' to={'/appderecetas/random'}>
                 <FaRandom className='mr-2'/>Random meal
                 </Link>
               </li>
@@ -108,7 +105,7 @@ const SideBar = () => {
                   </Link>
                 </li>
                 <li onClick={() => setActiveNav(false)}>
-                  <Link onClick={randomMeal} className='flex items-center py-2 border-[#45D1F4] border-t-2 border-b-2' to={`/appderecetas/${randomMeal.strMeal}`}>
+                  <Link onClick={() => useRandomMeal()} className='flex items-center py-2 border-[#45D1F4] border-t-2 border-b-2' to={`/appderecetas/${randomMeal.strMeal}`}>
                     <FaRandom className='mr-2'/>Random meal
                   </Link>
                 </li>
