@@ -15,6 +15,7 @@ export default function Nav() {
   const [activeNav, setActiveNav] = useState(false);
   const [search, setSearch] = useState('');
   const {searchRoute} = useParams();
+  const randomMeal = useRandomMeal()
   const searchQuery = useRef('');
   const navigate = useNavigate();
   const mobile = useMobile();
@@ -50,7 +51,7 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                <Link onClick={() => useRandomMeal()} className='flex items-center sub px-2' to={'/appderecetas/random'}>
+                <Link onClick={() => useRandomMeal()} className='flex items-center sub px-2' to={`/appderecetas/${randomMeal.strMeal}`}>
                 <FaRandom className='mr-2'/>Random meal
                 </Link>
               </li>

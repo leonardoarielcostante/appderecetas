@@ -6,7 +6,6 @@ import Meal from "./Componentes/Meal";
 import IngredientMeal from "./Routes/IngredientMeal";
 import SearchEngine from "./Componentes/SearchEngine";
 import CategoryMeals from "./Routes/CategoryMeals";
-import Random from "./Routes/Random";
 
 function App() {
 
@@ -24,7 +23,6 @@ function App() {
               <Route path="/appderecetas/Categories" element={<Categories />} />
               <Route path="/appderecetas/Categories/:categoryMeals" element={<CategoryMeals />} />
               <Route path="/appderecetas/Ingredients/:ingredient" element={<IngredientMeal />} />
-              <Route path="/appderecetas/random/" element={<Random />} />
               <Route path="/appderecetas/:meal/" element={<Meal />} />
             </Routes>
         </article>
