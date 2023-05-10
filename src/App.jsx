@@ -6,8 +6,7 @@ import Meal from "./Componentes/Meal";
 import IngredientMeal from "./Routes/IngredientMeal";
 import SearchEngine from "./Componentes/SearchEngine";
 import CategoryMeals from "./Routes/CategoryMeals";
-import Random from "./Componentes/Random";
-import useRandomMeal from "./Hooks/useRandomMeal";
+import Random from "./Routes/Random";
 
 function App() {
 

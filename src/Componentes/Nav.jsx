@@ -105,7 +105,7 @@ const SideBar = () => {
                   </Link>
                 </li>
                 <li onClick={() => setActiveNav(false)}>
-                  <Link onClick={() => useRandomMeal()} className='flex items-center py-2 border-[#45D1F4] border-t-2 border-b-2' to={`/appderecetas/${randomMeal.strMeal}`}>
+                  <Link onClick={() => useRandomMeal()} className='flex items-center py-2 border-[#45D1F4] border-t-2 border-b-2' to={`/appderecetas/random`}>
                     <FaRandom className='mr-2'/>Random meal
                   </Link>
                 </li>
